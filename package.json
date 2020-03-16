@@ -18,6 +18,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.26.0",
     "chai": "4.2.0",
+    "chai-as-promised": "^7.1.1",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.20.1",
@@ -29,8 +30,5 @@
     "protractor": "5.4.3"
   },
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "chai-as-promised": "^7.1.1"
-  }
+  "license": "ISC"
 }
