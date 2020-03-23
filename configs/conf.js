@@ -15,7 +15,6 @@ exports.config = {
     browserName: 'firefox'
   },
   onPrepare: function () {
-    // require("babel-register");
     browser.driver.manage().window().maximize()
     require('babel-core/register')
     require('babel-polyfill')
