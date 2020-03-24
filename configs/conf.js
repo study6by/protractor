@@ -1,6 +1,6 @@
 exports.config = {
   seleniumAddress: 'http://localhost:4444/wd/hub',
-  specs: ['../tests/angular-spec.js'],
+  specs: ['../tests/*js'],
   framework: 'mocha',
   mochaOpts: {
     timeout: 20000,
@@ -18,5 +18,8 @@ exports.config = {
     browser.driver.manage().window().maximize()
     require('babel-core/register')
     require('babel-polyfill')
+  },
+  onComplete: function () {
+    browser.quit()
   }
 }

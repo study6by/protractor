@@ -1,8 +1,4 @@
 export default class Page {
-  constructor () {
-    this.title = 'My Page'
-  }
-
   get learnButton () { return $$('a[class="dropdown-toggle"]').first() }
 
   waitForElement (elem) {

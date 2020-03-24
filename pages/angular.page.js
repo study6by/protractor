@@ -11,8 +11,8 @@ class AngularPage extends Page {
     browser.get('https://angularjs.org/')
   }
 
-  async typeText () {
-    await this.enterField.sendKeys('abc')
+  async typeText (str) {
+    await this.enterField.sendKeys(str)
   }
 
   async checkTodo () {

@@ -5,6 +5,10 @@ class FAQPage extends Page {
   get searchField () { return $('input[placeholder="SEARCH"]') }
   get resultSet () { return element.all(by.xpath('//div[@class="search-results-frame"]/descendant::li')) }
 
+  open () {
+    browser.get('https://docs.angularjs.org/misc/faq')
+  }
+
   async searchText () {
     await this.searchField.sendKeys('api')
   }
